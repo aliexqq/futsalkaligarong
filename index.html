@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>kaligarongfutsal</title>
+    <!-- simplyCountdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav id="home">
+      <a href="index.html"><img src="images/logo.png" /></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Peraturan</a></li>
+          <li><a href="#book">Jadwal</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="signin">
+        <a href="components/login.html">Login</a>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- Landing -->
+
+    <section class="landing">
+      <div class="des">
+        <h1>KALIGARONG FUTSAL</h1>
+        <h3>Hanya untuk bersenang senang</h3>
+        <h3>Gabung Sekarang</h3>
+        <a href="#book">Lihat Jadwal</a>
+      </div>
+      <div class="play"></div>
+    </section>
+
+    <!-- About -->
+
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="activity-icon">
+          <div class="activity-content">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h1>Search</h1>
+          </div>
+          <div class="activity-content">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h1>Book</h1>
+          </div>
+          <div class="activity-content">
+            <i class="fa-solid fa-futbol"></i>
+            <h1>Play</h1>
+          </div>
+        </div>
+
+        <div class="activity-des">
+          <h1>Ketentuan futsal</h1>
+          <div class="list">
+            <ul>
+              <li><h3>Diusahakan memakai sepatu jikalau ada</h3></li>
+              <li><h3>Datang 5 Menit sebelum jam main</h3></li>
+              <li><h3>10k per Orang</h3></li>
+              <li><h3>Main 1 jam (bisa perpanjang)</h3></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+
+    <h1 class="head" id="book">JADWAL FUTSAL TERKINI</h1>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <img src="images/lapangan.jfif" alt="rover" />
+        </div>
+        <div class="card-body">
+          <div class="namerate">
+            <h3>DEWA FUTSAL TEMBALANG</h3>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        <div class="details">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Jl. Tirto agung raya no.98 Pedalangan Banyumanik, Semarang.</span>
+        </div>
+        <div class="details">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Jum,at, 7 Maret 2025</span>
+        </div>
+        <div class="details">
+          <i class="fa-solid fa-clock"></i>
+          <span>23:00 - 24:00</span>
+        </div>
+        <div class="details">
+          <i class="fa-solid fa-futbol"></i>
+          <span>Lapangan Interlok</span>
+        </div>
+        <a href="https://maps.app.goo.gl/jFrTDFcNGbbSfZgx9" class="book">Lihat Lokasi</a>
+      </div>
+    </div>
+    <div class="simply-countdown"></div>
+
+    <!-- About -->
+
+    <section class="description">
+      <h2>Galeri</h2>
+      <div class="galery">
+        <img src="images/WhatsApp Image 2025-02-11 at 14.39.34.jpeg" alt="rover">
+      </div>
+      <div class="galery">
+        <img src="images/WhatsApp Image 2025-02-11 at 14.39.34.jpeg" alt="rover">
+      </div>
+      <div class="galery">
+        <img src="images/WhatsApp Image 2025-02-11 at 14.39.34.jpeg" alt="rover">
+      </div>
+      
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+      <div class="contact-about">
+        <h3>About US</h3>
+        <p>
+          Ajang silaturahmi antar karyawan maupun non karyawan, berguna untuk mengenal lebih dalam antar satu sama lain dari berbagai divisi kerja. Go Go Go !!!
+        </p>
+      </div>
+      <div class="contact-contact">
+        <h3>Contact US</h3>
+        <div class="log">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          <p>mas admin</p>
+        </div>
+        <div class="log">
+          <i class="fa-solid fa-phone"></i>
+          <p>mas admin</p>
+        </div>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.display = "block";
+        navLinks.style.position = "fixed";
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.display = "none";
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2025, // required
+        month: 3, // required
+        day: 7, // required
+        hours: 23, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
+    </script>
+  </body>
+</html>
