@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <title>Daftar</title>
+  </head>
+  <body>
+    <div class="login-box">
+      <div class="hero">
+        <div class="form-box">
+          <a href="../index.html" class="close-btn">&times;</a>
+          <h2>Daftar</h2>
+          <form id="login" class="input-group">
+            <div class="input-field">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <input id="nama" class="field" placeholder="Nama" required />
+            </div>
+            <div class="input-field">
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <input
+                id="keterangan"
+                class="field"
+                placeholder="Confirm Hadir/Tidak"
+                required
+              />
+              <div>
+                <div></div>
+              </div>
+            </div>
+            <button onclick="sendtowhatsapp()" type="submit" class="submit-btn">Kirim</button>
+          </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="whatsapp.js"></script>
+  </body>
+</html>

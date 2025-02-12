@@ -65,12 +65,13 @@ nav .fa-solid {
 }
 .des h1 {
   font-size: 2.6rem;
-  font-weight: 500;
+  font-weight: 1000;
 }
 .des h3 {
   line-height: 40px;
   font-weight: 500;
 }
+
 .play {
   width: 400px;
   height: 454px;
@@ -159,10 +160,8 @@ nav .fa-solid {
 }
 .submit-btn {
   width: 100%;
-  padding: 10px 30px;
-  cursor: pointer;
-  display: block;
-  margin: auto;
+  margin: 30px auto;
+  padding: 10px;
   color: #fff;
   background: #1fc38b;
   border: 0;
@@ -207,7 +206,20 @@ span {
 }
 .signin a {
   text-decoration: none;
-  color: #fff;
+  color: #1fc38b;
+  background: white;
+  display: inline-block;
+  border-radius: 8px;
+  border: 1px solid white;
+  margin-top: 1px;
+  padding: 15px 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.signin a:hover {
+  border: 1px solid white;
+  color: white;
+  background: #1fc38b;
 }
 
 /* Register */
@@ -329,7 +341,7 @@ span {
 }
 .activity-des h1 {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 1000;
 }
 .activity-des .list {
   margin-left: 20px;
